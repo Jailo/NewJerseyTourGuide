@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
 
+        <!-- Things to do activity -->
         <activity android:name=".ThingsToDoActivity"
             android:label="@string/things_to_do">
             android:parentActivityName=".MainActivity">
@@ -25,6 +26,17 @@
                    <meta-data
                        android:name="android.support.PARENT_ACTIVITY"
                        android:value=".MainActivity"/>
+        </activity>
+
+        <!-- Food & Drink activity -->
+        <activity android:name=".FoodAndDrink"
+            android:label="@string/food_and_drink">
+            android:parentActivityName=".MainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
         </activity>
 
     </application>
