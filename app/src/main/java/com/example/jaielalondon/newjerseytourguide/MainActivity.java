@@ -1,17 +1,9 @@
 package com.example.jaielalondon.newjerseytourguide;
 
-import android.app.ActionBar;
 import android.content.Intent;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ListView;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
 
         // Find food and drink view container
         View foodAndDrink = (View) findViewById(R.id.food_and_drink_container);
+
+        // Find shopping view container
+        View shopping = (View) findViewById(R.id.shopping_container);
+
+        // Find places to stay view container
+        View placesToStay = (View) findViewById(R.id.places_to_stay_container);
 
         thingsToDo.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +39,27 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // When foodAndDrink View is clicked, set intent to go to FoodAndDrinkActivity
                 Intent intent = new Intent(MainActivity.this,
-                        FoodAndDrink.class);
+                        FoodAndDrinkActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        shopping.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // When shopping view is clicked, set intent to go to ShoppingActivity
+                Intent intent = new Intent(MainActivity.this,
+                        ShoppingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        placesToStay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // When placesToStay View is clicked, set intent to go to PlacesToStayActivity
+                Intent intent = new Intent(MainActivity.this,
+                        PlacesToStayActivity.class);
                 startActivity(intent);
             }
         });

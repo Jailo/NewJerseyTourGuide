@@ -1,25 +1,24 @@
 package com.example.jaielalondon.newjerseytourguide;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.ListView;
-
-import java.util.ArrayList;
 
 /**
- * Created by jaielalondon on 6/2/18.
+ * Created by jaielalondon on 6/4/18.
  */
 
-public class ThingsToDoActivity extends AppCompatActivity {
+public class PlacesToStayActivity extends AppCompatActivity{
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Set page title to places_to_stay string resource
+        getSupportActionBar().setTitle(R.string.places_to_stay);
+
         // Set the content view to tab_swipe layout
         setContentView(R.layout.tab_swipe);
 
@@ -28,7 +27,7 @@ public class ThingsToDoActivity extends AppCompatActivity {
 
         // Create an adapter that knows which fragment should be shown on each page
         CategoryAdapter adapter = new CategoryAdapter(getSupportFragmentManager(),
-                ThingsToDoActivity.this);
+                PlacesToStayActivity.this);
 
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);
@@ -38,7 +37,6 @@ public class ThingsToDoActivity extends AppCompatActivity {
 
         // Connect the TabLayout to ViewPager
         tabLayout.setupWithViewPager(viewPager);
-
 
     }
 }

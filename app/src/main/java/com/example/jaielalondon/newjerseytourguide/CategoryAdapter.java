@@ -39,7 +39,7 @@ public class CategoryAdapter extends FragmentPagerAdapter {
                 return new SportsOutdoorsFragment();
             }
 
-        } else if (this.mContext instanceof FoodAndDrink) {
+        } else if (this.mContext instanceof FoodAndDrinkActivity) {
             // Checks if the current activity is FoodAndDrinkActivity
 
             if (position == 0) {
@@ -56,8 +56,38 @@ public class CategoryAdapter extends FragmentPagerAdapter {
                 return new WineriesAndBarsFragment();
             }
 
-        } else { //Safty net.... Delete when added all categories
-            return new FunFragment();
+        } else if (this.mContext instanceof FoodAndDrinkActivity){
+            // Checks if the current activity is FoodAndDrinkActivity
+
+            if (position == 0) {
+                // If on the first tab position,
+                // return MallsFragment
+                return new MallsFragment();
+            } else if (position == 1) {
+                // If on the second tab position,
+                // return AntiquingFragment
+                return new AntiquingFragment();
+            } else {
+                // If on the third tab position,
+                // return FleaAndFarmersMarketFragment
+                return new FleaAndFarmersMarketsFragment();
+            }
+        } else {
+            // Checks if the current activity is PlacesToStayActivity
+
+            if (position == 0) {
+                // If on the first tab position,
+                // return resturants string.xml resource
+                return new HotelsFragment();
+            } else if (position == 1) {
+                // If on the second tab position,
+                // return cafes_and_treats string.xml resource
+                return new BedAndBreakfastsFragment();
+            } else {
+                // If on the third tab position,
+                // return wineries_and_bars string.xml resource
+                return new ResortsFragment();
+            }
         }
 
     }
@@ -87,13 +117,13 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
             }
 
-        } else if (this.mContext instanceof FoodAndDrink) {
+        } else if (this.mContext instanceof FoodAndDrinkActivity) {
             // Checks if the current activity is FoodAndDrinkActivity
 
             if (position == 0) {
                 // If on the first tab position,
                 // return resturants string.xml resource
-                return mContext.getString(R.string.resturants);
+                return mContext.getString(R.string.restaurants);
             } else if (position == 1) {
                 // If on the second tab position,
                 // return cafes_and_treats string.xml resource
@@ -104,12 +134,45 @@ public class CategoryAdapter extends FragmentPagerAdapter {
                 return mContext.getString(R.string.wineries_and_bars);
             }
 
+        } else if (this.mContext instanceof ShoppingActivity){
+            // Checks if the current activity is ShoppingActivity
+
+            if (position == 0) {
+                // If on the first tab position,
+                // return resturants string.xml resource
+                return mContext.getString(R.string.malls);
+            } else if (position == 1) {
+                // If on the second tab position,
+                // return cafes_and_treats string.xml resource
+                return mContext.getString(R.string.antiquing);
+            } else {
+                // If on the third tab position,
+                // return wineries_and_bars string.xml resource
+                return mContext.getString(R.string.flea_and_farmers_markets);
+            }
         } else {
-            // Return app_name string resource
-            return mContext.getString(R.string.app_name);
+            // Checks if the current activity is PlacesToStayActivity
+
+            if (position == 0) {
+                // If on the first tab position,
+                // return hotels string.xml resource
+                return mContext.getString(R.string.hotels);
+            } else if (position == 1) {
+                // If on the second tab position,
+                // return bed_and_breakfasts string.xml resource
+                return mContext.getString(R.string.bed_and_breakfasts);
+            } else {
+                // If on the third tab position,
+                // return resorts string.xml resource
+                return mContext.getString(R.string.resorts);
+            }
         }
     }
 
+    /**
+     *
+     * @return number of tabs
+     */
     @Override
     public int getCount() {
         return 3;

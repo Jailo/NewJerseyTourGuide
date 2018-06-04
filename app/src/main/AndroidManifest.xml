@@ -29,7 +29,29 @@
         </activity>
 
         <!-- Food & Drink activity -->
-        <activity android:name=".FoodAndDrink"
+        <activity android:name=".FoodAndDrinkActivity"
+            android:label="@string/food_and_drink">
+            android:parentActivityName=".MainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <!-- Shopping activity -->
+        <activity android:name=".ShoppingActivity"
+            android:label="@string/food_and_drink">
+            android:parentActivityName=".MainActivity">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
+        </activity>
+
+        <!-- Places to stay activity -->
+        <activity android:name=".PlacesToStayActivity"
             android:label="@string/food_and_drink">
             android:parentActivityName=".MainActivity">
 

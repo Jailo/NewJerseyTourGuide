@@ -5,17 +5,21 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * Created by jaielalondon on 6/4/18.
  */
 
-public class FoodAndDrink extends AppCompatActivity {
+public class ShoppingActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Set page title to shopping string resource
+        getSupportActionBar().setTitle(R.string.shopping);
+
+        // Set the content view to tab_swipe layout
         setContentView(R.layout.tab_swipe);
 
         // Find the view pager that will allow the user to swipe between fragments
@@ -23,7 +27,7 @@ public class FoodAndDrink extends AppCompatActivity {
 
         // Create an adapter that knows which fragment should be shown on each page
         CategoryAdapter adapter = new CategoryAdapter(getSupportFragmentManager(),
-                FoodAndDrink.this);
+                ShoppingActivity.this);
 
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);

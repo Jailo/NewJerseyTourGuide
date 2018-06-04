@@ -30,6 +30,23 @@ public class Place {
      * @param imageResourceId is the resource Id for the image associated with the place
      */
     public Place(String placeName, String shortDescription, String city,
+                 int imageResourceId) {
+        mName = placeName;
+        mShortDescription = shortDescription;
+        mCity = city;
+        mPlaceImageResourceId = imageResourceId;
+
+    }
+
+    /**
+     * Create new {@link Place} Object
+     * @param placeName is the name of the place
+     * @param shortDescription is a short description of the place (i.e "Theme Park")
+     * @param city is the city where the place is
+     * @param imageResourceId is the resource Id for the image associated with the place
+     * @param longDescription is a longer description of the {@Place}
+     */
+    public Place(String placeName, String shortDescription, String city,
                  int imageResourceId, String longDescription) {
         mName = placeName;
         mShortDescription = shortDescription;
