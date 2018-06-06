@@ -31,18 +31,14 @@ public class ResortsFragment extends Fragment {
 
         //Create new ArrayList of Fun Places
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("IPlay America", "Indoor Theme Park",
-                "Freehold, NJ", R.drawable.dokidoki, "New Jersey's Premier " +
-                "Indoor Theme Park, with a full-service bar and grill alongside 200+ games, rides," +
-                " attractions, laser tag, go karts and much more."));
+        places.add(new Place("Mountain Creek", "Ski Resort",
+                "Vernon Township", R.drawable.mountain_creek));
 
-        places.add(new Place("Liberty Science Center", "Museum",
-                "Jersey City, NJ", R.drawable.dokidoki, "Liberty Science Center " +
-                "is an interactive science museum and learning center located in Liberty State " +
-                "Park in Jersey City in Hudson County, New Jersey, United States."));
+        places.add(new Place("Grand Cascades Lodge", "Hotel",
+                "Hamburg", R.drawable.grand_cascades_lodge));
 
-        places.add(new Place("IPlay America", "Indoor Theme Park",
-                "Freehold", R.drawable.dokidoki, "hahaha"));
+        places.add(new Place("The Asbury Hotel", "Hotel",
+                "Asbury Park", R.drawable.asbury_hotel));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

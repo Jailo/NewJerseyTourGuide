@@ -56,8 +56,8 @@ public class CategoryAdapter extends FragmentPagerAdapter {
                 return new WineriesAndBarsFragment();
             }
 
-        } else if (this.mContext instanceof FoodAndDrinkActivity){
-            // Checks if the current activity is FoodAndDrinkActivity
+        } else if (this.mContext instanceof ShoppingActivity){
+            // Checks if the current activity is ShoppingActivity
 
             if (position == 0) {
                 // If on the first tab position,

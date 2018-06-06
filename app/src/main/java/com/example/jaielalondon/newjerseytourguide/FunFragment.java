@@ -33,18 +33,14 @@ public class FunFragment extends Fragment {
         //Create new ArrayList of Fun Places
         final ArrayList<Place> places = new ArrayList<Place>();
         places.add(new Place("IPlay America", "Amusement center",
-                "Freehold", R.drawable.iplay, "New Jersey's Premier " +
-                "Indoor Theme Park, with a full-service bar and grill alongside 200+ games, rides," +
-                " attractions, laser tag, go karts and much more."));
+                "Freehold", R.drawable.iplay));
 
         places.add(new Place("Six Flags Great Adventure & Safari",
                 "Amusement park",
-                "Jackson", R.drawable.sixflags, "Haven't i made it obvious?" +
-                " Haven't I made it clear? Want me to spell it out for you? F.r.i.e.n.d.s"));
+                "Jackson", R.drawable.sixflags));
 
         places.add(new Place("Adventure Rooms", "Room Escape Games",
-                "Montclair", R.drawable.adventure_rooms, "Haven't i made it obvious?\" +\n" +
-                "                \" Haven't I made it clear? Want me to spell it out for you? F.r.i.e.n.d.s"));
+                "Montclair", R.drawable.adventure_rooms));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

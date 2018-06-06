@@ -30,18 +30,14 @@ public class AntiquingFragment extends Fragment {
 
         //Create new ArrayList of Fun Places
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("IPlay America", "Indoor Theme Park",
-                "Freehold, NJ", R.drawable.dokidoki, "New Jersey's Premier " +
-                "Indoor Theme Park, with a full-service bar and grill alongside 200+ games, rides," +
-                " attractions, laser tag, go karts and much more."));
+        places.add(new Place("Carnival of Collectables", "Antique store",
+                "Sicklerville", R.drawable.carnival_of_collectables));
 
-        places.add(new Place("Liberty Science Center", "Museum",
-                "Jersey City, NJ", R.drawable.dokidoki, "Liberty Science Center " +
-                "is an interactive science museum and learning center located in Liberty State " +
-                "Park in Jersey City in Hudson County, New Jersey, United States."));
+        places.add(new Place("Lafayette Mill Antiques Center", "Antiques Center",
+                "Lafayette", R.drawable.lafayette_mill));
 
-        places.add(new Place("IPlay America", "Indoor Theme Park",
-                "Freehold", R.drawable.dokidoki, "hahaha"));
+        places.add(new Place("Winterhill Antiques", "Antique store",
+                "Scotch Plains", R.drawable.winterhill_antiques));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

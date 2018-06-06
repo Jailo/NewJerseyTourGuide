@@ -30,18 +30,14 @@ public class FleaAndFarmersMarketsFragment extends Fragment {
 
         //Create new ArrayList of Fun Places
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("IPlay America", "Indoor Theme Park",
-                "Freehold, NJ", R.drawable.dokidoki, "New Jersey's Premier " +
-                "Indoor Theme Park, with a full-service bar and grill alongside 200+ games, rides," +
-                " attractions, laser tag, go karts and much more."));
+        places.add(new Place("Dutch Country Farmers Market", "Farmers Market",
+                "Flemington", R.drawable.dutch_contry_farmers_market));
 
-        places.add(new Place("Liberty Science Center", "Museum",
-                "Jersey City, NJ", R.drawable.dokidoki, "Liberty Science Center " +
-                "is an interactive science museum and learning center located in Liberty State " +
-                "Park in Jersey City in Hudson County, New Jersey, United States."));
+        places.add(new Place("Alstede Farms", "Produce Market",
+                " Chester", R.drawable.alstede_farms));
 
-        places.add(new Place("IPlay America", "Indoor Theme Park",
-                "Freehold", R.drawable.dokidoki, "hahaha"));
+        places.add(new Place("Berlin Farmer's Market", "Farmers Market",
+                "Berlin", R.drawable.berlin_farmers_market));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
