@@ -30,18 +30,18 @@ public class ToursFragment extends Fragment {
 
         //Create new ArrayList of Fun Places
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("IPlay America", "Indoor Theme Park",
-                "Freehold, NJ", R.drawable.dokidoki, "New Jersey's Premier " +
+        places.add(new Place("Thomas Edison National Historical Park", "Historic Site",
+                "West Orange", R.drawable.thomas_edison, "New Jersey's Premier " +
                 "Indoor Theme Park, with a full-service bar and grill alongside 200+ games, rides," +
                 " attractions, laser tag, go karts and much more."));
 
-        places.add(new Place("Liberty Science Center", "Museum",
-                "Jersey City, NJ", R.drawable.dokidoki, "Liberty Science Center " +
+        places.add(new Place("Empty Sky - 9/11 Memorial", "Monument",
+                "Jersey City", R.drawable.empty_sky, "Liberty Science Center " +
                 "is an interactive science museum and learning center located in Liberty State " +
                 "Park in Jersey City in Hudson County, New Jersey, United States."));
 
-        places.add(new Place("IPlay America", "Indoor Theme Park",
-                "Freehold", R.drawable.dokidoki, "hahaha"));
+        places.add(new Place("Cape May Whale Watcher", "Whale watching tour agency",
+                "Cape May", R.drawable.cape_may_whale_watcher, "hahaha"));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

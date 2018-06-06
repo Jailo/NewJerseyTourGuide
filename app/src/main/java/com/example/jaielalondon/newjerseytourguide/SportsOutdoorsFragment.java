@@ -30,18 +30,18 @@ public class SportsOutdoorsFragment extends Fragment {
 
         //Create new ArrayList of Fun Places
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("IPlay America", "Indoor Theme Park",
-                "Freehold, NJ", R.drawable.dokidoki, "New Jersey's Premier " +
+        places.add(new Place("Echo Lake Stable", "Horseback Trail Rides",
+                " Newfoundland", R.drawable.echo_lakes_stables, "New Jersey's Premier " +
                 "Indoor Theme Park, with a full-service bar and grill alongside 200+ games, rides," +
                 " attractions, laser tag, go karts and much more."));
 
-        places.add(new Place("Liberty Science Center", "Museum",
-                "Jersey City, NJ", R.drawable.dokidoki, "Liberty Science Center " +
+        places.add(new Place("A-Lot-A Hot Air Balloon Rides", "Balloon ride tour agency",
+                "Frenchtown", R.drawable.a_lot_a_hot_air, "Liberty Science Center " +
                 "is an interactive science museum and learning center located in Liberty State " +
                 "Park in Jersey City in Hudson County, New Jersey, United States."));
 
-        places.add(new Place("IPlay America", "Indoor Theme Park",
-                "Freehold", R.drawable.dokidoki, "hahaha"));
+        places.add(new Place("Turtle Back Zoo", "Zoo",
+                "West Orange", R.drawable.turtle_back_zoo, "hahaha"));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

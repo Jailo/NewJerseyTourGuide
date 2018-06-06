@@ -32,18 +32,19 @@ public class FunFragment extends Fragment {
 
         //Create new ArrayList of Fun Places
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("IPlay America", "Indoor Theme Park",
-                "Freehold, NJ", R.drawable.dokidoki, "New Jersey's Premier " +
+        places.add(new Place("IPlay America", "Amusement center",
+                "Freehold", R.drawable.iplay, "New Jersey's Premier " +
                 "Indoor Theme Park, with a full-service bar and grill alongside 200+ games, rides," +
                 " attractions, laser tag, go karts and much more."));
 
-        places.add(new Place("Liberty Science Center", "Museum",
-                "Jersey City, NJ", R.drawable.dokidoki, "Liberty Science Center " +
-                "is an interactive science museum and learning center located in Liberty State " +
-                "Park in Jersey City in Hudson County, New Jersey, United States."));
+        places.add(new Place("Six Flags Great Adventure & Safari",
+                "Amusement park",
+                "Jackson", R.drawable.sixflags, "Haven't i made it obvious?" +
+                " Haven't I made it clear? Want me to spell it out for you? F.r.i.e.n.d.s"));
 
-        places.add(new Place("IPlay America", "Indoor Theme Park",
-                "Freehold", R.drawable.dokidoki, "hahaha"));
+        places.add(new Place("Adventure Rooms", "Room Escape Games",
+                "Montclair", R.drawable.adventure_rooms, "Haven't i made it obvious?\" +\n" +
+                "                \" Haven't I made it clear? Want me to spell it out for you? F.r.i.e.n.d.s"));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The

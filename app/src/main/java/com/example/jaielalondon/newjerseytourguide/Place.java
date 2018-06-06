@@ -33,7 +33,7 @@ public class Place {
                  int imageResourceId) {
         mName = placeName;
         mShortDescription = shortDescription;
-        mCity = city;
+        mCity = city + ", NJ";
         mPlaceImageResourceId = imageResourceId;
 
     }
@@ -50,7 +50,7 @@ public class Place {
                  int imageResourceId, String longDescription) {
         mName = placeName;
         mShortDescription = shortDescription;
-        mCity = city;
+        mCity = city + ", NJ";
         mPlaceImageResourceId = imageResourceId;
         mLongDescription = longDescription;
 
