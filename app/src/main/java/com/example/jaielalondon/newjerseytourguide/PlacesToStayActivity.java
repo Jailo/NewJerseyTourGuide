@@ -16,9 +16,6 @@ public class PlacesToStayActivity extends AppCompatActivity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Set page title to places_to_stay string resource
-        getSupportActionBar().setTitle(R.string.places_to_stay);
-
         // Set the content view to tab_swipe layout
         setContentView(R.layout.tab_swipe);
 

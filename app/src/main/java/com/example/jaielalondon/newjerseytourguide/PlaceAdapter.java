@@ -1,6 +1,7 @@
 package com.example.jaielalondon.newjerseytourguide;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -83,5 +84,6 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
         return listItemView;
     }
+
 
 }

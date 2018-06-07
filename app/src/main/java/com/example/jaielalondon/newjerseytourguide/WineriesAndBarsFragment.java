@@ -32,17 +32,13 @@ public class WineriesAndBarsFragment extends Fragment {
         //Create new ArrayList of Fun Places
         final ArrayList<Place> places = new ArrayList<Place>();
         places.add(new Place("Hopewell Valley Vineyards", "Winery",
-                "Pennington", R.drawable.hopewell_valley_vineyards, "New Jersey's Premier " +
-                "Indoor Theme Park, with a full-service bar and grill alongside 200+ games, rides," +
-                " attractions, laser tag, go karts and much more."));
+                "Pennington", R.drawable.hopewell_valley_vineyards));
 
         places.add(new Place("Shanghai Jazz Restaurant & Bar", "Asian Restaurant",
-                "Madison", R.drawable.shanghai_jazz, "Liberty Science Center " +
-                "is an interactive science museum and learning center located in Liberty State " +
-                "Park in Jersey City in Hudson County, New Jersey, United States."));
+                "Madison", R.drawable.shanghai_jazz));
 
         places.add(new Place("Cielo Wine Bar", "Italian Restaurant",
-                "Atlantic City", R.drawable.cielo_wine_bar, "hahaha"));
+                "Atlantic City", R.drawable.cielo_wine_bar));
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
         // adapter knows how to create list items for each item in the list.

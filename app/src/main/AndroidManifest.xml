@@ -41,7 +41,7 @@
 
         <!-- Shopping activity -->
         <activity android:name=".ShoppingActivity"
-            android:label="@string/food_and_drink">
+            android:label="@string/shopping">
             android:parentActivityName=".MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
@@ -52,13 +52,18 @@
 
         <!-- Places to stay activity -->
         <activity android:name=".PlacesToStayActivity"
-            android:label="@string/food_and_drink">
+            android:label="@string/places_to_stay">
             android:parentActivityName=".MainActivity">
 
             <!-- Parent activity meta-data to support 4.0 and lower -->
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity"/>
+        </activity>
+
+        <!-- Place Info activity -->
+        <activity android:name=".PlaceInfoActivity"
+            android:label="@string/info">
         </activity>
 
     </application>

@@ -16,9 +16,6 @@ public class ShoppingActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Set page title to shopping string resource
-        getSupportActionBar().setTitle(R.string.shopping);
-
         // Set the content view to tab_swipe layout
         setContentView(R.layout.tab_swipe);
 

@@ -16,8 +16,6 @@ public class FoodAndDrinkActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
         // Set the content view to tab_swipe layout
         setContentView(R.layout.tab_swipe);
 

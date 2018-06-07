@@ -27,6 +27,11 @@
         <item name="android:layout_marginTop">2dp</item>
     </style>
 
+    <!-- Place description text style -->
+    <style name="Description">
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+    </style>
+
     <!-- Style for a tab that displays category name -->
     <style name="CategoryTab" parent="@style/Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@android:color/white</item>
