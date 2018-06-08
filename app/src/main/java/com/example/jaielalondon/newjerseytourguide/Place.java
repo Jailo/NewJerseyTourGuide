@@ -49,13 +49,13 @@ public class Place {
 
     /**
      * Create new {@link Place} Object
-     * @param placeName is the name of the place
-     * @param shortDescription is a short description of the place (i.e "Theme Park")
-     * @param city is the city where the place is
-     * @param imageResourceId is the resource Id for the image associated with the place
+     * @param placeName is the name of the {@Place}
+     * @param shortDescription is a short description of the {@Place} (i.e "Theme Park")
+     * @param city is the city where the {@Place} is
+     * @param imageResourceId is the resource Id for the image associated with the {@Place}
      * @param longDescription is a longer description of the {@Place}
-     * @param address is the place's address
-     * @param websiteUrl is the place's website
+     * @param address is the {@Place}'s address
+     * @param websiteUrl is the{@Place}'s website
      */
     public Place(String placeName, String shortDescription, String city,
                  int imageResourceId, String longDescription, String address, String websiteUrl) {

@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.ActionMenuView;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toolbar;
+
+import java.util.Objects;
 
 public class PlaceInfoActivity extends AppCompatActivity{
 
@@ -28,10 +31,32 @@ public class PlaceInfoActivity extends AppCompatActivity{
     /* Place's Website Url */
     private String mWebsiteUrl;
 
+
+    /**
+     * An item in your options menu is selected.
+     * @param item is the Up Button
+     * @return
+     */
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                // Respond to the action bar's Up/Home button by finishing the activity,
+                // thus going back to whichever activity came before this one
+                finish();
+                return false;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.place_info);
+
+        // Enable Up button in action bar
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         //Get the intent that brought user to this activity
         Intent intent = getIntent();
@@ -77,6 +102,7 @@ public class PlaceInfoActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
 
+                // do a null check on the website url to avoid null exception
                 if (mWebsiteUrl != null) {
 
                     //Set intent to go to the current place's website
