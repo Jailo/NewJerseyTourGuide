@@ -1,5 +1,7 @@
 package com.example.jaielalondon.newjerseytourguide;
 
+import android.util.Log;
+
 /**
  * Created by jaielalondon on 6/2/18.
  */
@@ -63,7 +65,16 @@ public class Place {
         mPlaceImageResourceId = imageResourceId;
         mLongDescription = longDescription;
         mAddress = address;
-        mWebsiteUrl = websiteUrl;
+
+        // Check if the website url does NOT start with http:// or https://
+        if (!websiteUrl.startsWith("http://") && !websiteUrl.startsWith("https://")){
+            // Assign http:// and the website url to mWebsiteUrl (i.e http://www.example.com)
+            mWebsiteUrl = "http://" + websiteUrl;
+        } else{
+            // If websiteUrl DOES begin with http:// or https://
+            //then assign websiteUrl value to mWebsiteUrl
+            mWebsiteUrl = websiteUrl;
+        }
 
     }
 

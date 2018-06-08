@@ -1,11 +1,13 @@
 package com.example.jaielalondon.newjerseytourguide;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -30,14 +32,30 @@ public class AntiquingFragment extends Fragment {
 
         //Create new ArrayList of Fun Places
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("Carnival of Collectables", "Antique store",
-                "Sicklerville", R.drawable.carnival_of_collectables));
+        places.add(new Place("Carnival of Collectables",
+                "Antique store",
+                "Sicklerville", R.drawable.carnival_of_collectables,
+                "Carnival of Collectables is a 12000 sq ft Antique and Art mall located" +
+                        " minutes outside Philadelphia, PA right off the Atlantic City Expressway in Southern NJ.",
+                "368 Berlin - Cross Keys Rd, Sicklerville, NJ 08081",
+                "https://www.carnivalofcollectables.com/"));
 
-        places.add(new Place("Lafayette Mill Antiques Center", "Antiques Center",
-                "Lafayette", R.drawable.lafayette_mill));
+        places.add(new Place("Lafayette Mill Antiques Center",
+                "Antiques Center",
+                "Lafayette", R.drawable.lafayette_mill,
+                "New Jersey's Premier Antiques Center, with over 55 specially-selected" +
+                        " antiques dealers.",
+                "12 Morris Farm Rd, Lafayette Township, NJ 07848",
+                "www.millantiques.com/"));
 
-        places.add(new Place("Winterhill Antiques", "Antique store",
-                "Scotch Plains", R.drawable.winterhill_antiques));
+        places.add(new Place("Winterhill Antiques",
+                "Antique store",
+                "Scotch Plains", R.drawable.winterhill_antiques,
+                "We love finding beautiful and unusual pieces and we are always happy " +
+                        "when they find a new home! " +
+                        "Do come and visit -you will not be disappointed-truly!",
+                "425 Park Ave, Scotch Plains, NJ 07076",
+                "www.winterhillantiques.com/"));
 
 
         // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
@@ -53,6 +71,35 @@ public class AntiquingFragment extends Fragment {
         // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
+
+        /**
+         * create a list view click listener that starts intent to place info page
+         * and send data about the place, like its Image Id, name, description, address, and website
+         * through the intent to the PlaceInfoActivity
+         */
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                // Get the current place that the user has clicked on
+                Place currentPlace = places.get(position);
+
+                //Create Intent that goes to PlaceInfoActivity
+                Intent intent = new Intent(getActivity(), PlaceInfoActivity.class);
+
+                // Send the data from the currentPlace to the PlaceInfoActivity
+                // The data we're sending is the current place's image Id, name, long description...
+                intent.putExtra("imageId", currentPlace.getPlaceImageResourceId());
+                intent.putExtra("name", currentPlace.getPlaceName());
+                intent.putExtra("longDescription", currentPlace.getLongDescription());
+                intent.putExtra("address", currentPlace.getAddress());
+                intent.putExtra("websiteUrl", currentPlace.getWebsiteUrl());
+
+                startActivity(intent);
+            }
+
+        });
+
 
         return rootView;
 

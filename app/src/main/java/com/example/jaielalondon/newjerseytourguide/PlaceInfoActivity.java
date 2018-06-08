@@ -76,11 +76,18 @@ public class PlaceInfoActivity extends AppCompatActivity{
 
             @Override
             public void onClick(View v) {
-                //Set intent to go to the current place's website
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(mWebsiteUrl));
-                startActivity(i);
+
+                if (mWebsiteUrl != null) {
+
+                    //Set intent to go to the current place's website
+                    Intent i = new Intent(Intent.ACTION_VIEW);
+                    i.setData(Uri.parse(mWebsiteUrl));
+                    startActivity(i);
+
+                }
+
             }
+
         });
 
     }
