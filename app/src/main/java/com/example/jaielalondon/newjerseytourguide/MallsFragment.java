@@ -44,7 +44,7 @@ public class MallsFragment extends Fragment {
 
         places.add(new Place("Jersey Gardens",
                 "Shopping Mall",
-                "Elizabeth", R.drawable.jersey_gardens_mall,
+                "Elizabeth", R.drawable.jersey_gardens,
                 "Get ready to splurge at The Mills at Jersey Gardens, New Jersey's" +
                         " largest premium outlet mall with over 200 stores under one roof! " +
                         "They welcome over 18 million people each year, nearly 5 times more people" +

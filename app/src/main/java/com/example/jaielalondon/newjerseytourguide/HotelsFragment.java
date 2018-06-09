@@ -34,7 +34,7 @@ public class HotelsFragment extends Fragment {
         final ArrayList<Place> places = new ArrayList<Place>();
         places.add(new Place("Caesars Atlantic City Hotel and Casino",
                 "Hotel",
-                "Atlantic City", R.drawable.caesars,
+                "Atlantic City", R.drawable.caesars_ac,
                 "Caesars Atlantic City is a luxury hotel, casino, and spa resort in " +
                         "Atlantic City, New Jersey. Like Caesars Palace in Las Vegas, " +
                         "it has an ancient Roman and ancient Greek theme.",
