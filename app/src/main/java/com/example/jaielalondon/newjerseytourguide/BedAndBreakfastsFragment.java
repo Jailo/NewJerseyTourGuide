@@ -37,8 +37,7 @@ public class BedAndBreakfastsFragment extends Fragment {
                 "Newton", R.drawable.wooden_duck,
                 " Imagine a secluded estate not very far away yet far enough to escape " +
                         "from the real world. A comfortable, friendly B&B at the center of all Northern " +
-                        "New Jersey has to offer. Mountain lakes, shopping, entertainment, romance & dining.\n" +
-                        "\n" +
+                        "New Jersey has to offer. Mountain lakes, shopping, entertainment, romance & dining. " +
                         "Come see why travelers stay with us, not from just the northeast US but from all over the world.",
                 "140 Goodale Rd, Newton, NJ 07860",
                 "https://www.woodenduckinn.com/"));

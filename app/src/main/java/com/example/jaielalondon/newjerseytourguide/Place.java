@@ -61,7 +61,7 @@ public class Place {
                  int imageResourceId, String longDescription, String address, String websiteUrl) {
         mName = placeName;
         mShortDescription = shortDescription;
-        mCity = city + ", NJ";
+        mCity = "In " + city + ", NJ";
         mPlaceImageResourceId = imageResourceId;
         mLongDescription = longDescription;
         mAddress = address;

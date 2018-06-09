@@ -16,20 +16,53 @@
         <item name="elevation">0dp</item>
     </style>
 
+
+    <!-- Homepage Categories Container Style -->
+    <style name="CategoriesContainer">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+
+    <!-- Categories icon images style -->
+    <style name="iconImage">
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+
+    <!-- Category Title style -->
+    <style name="CategoryTitle">
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Large</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
     <!-- Place name text style -->
     <style name="PlaceName">
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
         <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
     </style>
 
     <!-- Place short description and city text style -->
     <style name="ShortDescriptAndCity">
         <item name="android:layout_marginTop">2dp</item>
+        <item name="android:textColor">@color/secondaryTextColor</item>
     </style>
 
     <!-- Place description text style -->
     <style name="Description">
-        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Medium</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small</item>
+        <item name="android:textColor">@color/primaryTextColor</item>
     </style>
 
     <!-- Style for a tab that displays category name -->
@@ -42,7 +75,7 @@
 
     <!-- Text appearance style for category tabs -->
     <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
-        <item name="android:textColor">#A8A19E</item>
+        <item name="android:textColor">#e6e6e6</item>
     </style>
 
 </resources>

@@ -2,6 +2,9 @@
     <string name="app_name">New Jersey Tour Guide</string>
     <string name="info">Info</string>
 
+    <!-- Main Activity Strings -->
+    <string name="visit_nj">Visit some of the best sights and attractions in New Jersey!</string>
+
     <!--Things to do category -->
     <string name="things_to_do">Things To Do</string>
     <string name="fun">Fun &amp; Leisure</string>
@@ -27,9 +30,6 @@
     <string name="hotels">Hotels</string>
     <string name="bed_and_breakfasts">Bed &amp; Breakfasts</string>
     <string name="resorts">Resorts</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

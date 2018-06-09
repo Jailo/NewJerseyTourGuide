@@ -1,87 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fillViewport="true"
     tools:context="com.example.jaielalondon.newjerseytourguide.MainActivity">
 
-    <LinearLayout
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
 
-        <LinearLayout
-            android:layout_width="0dp"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visit some of the best sights and attractions in New Jersey!"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:paddingTop="8dp"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:textAlignment="center"/>
+
+
+
+        <TableRow
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/things_to_do_container"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:paddingTop="24dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/things_to_do"
-                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/things_to_do_container"
+                android:layout_weight="1"
+                style="@style/CategoriesContainer">
 
-        </LinearLayout>
+                <ImageView
+                    android:layout_height="120dp"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/ic_sailboat"
+                    style="@style/iconImage"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/things_to_do"
+                    style="@style/CategoryTitle" />
+
+            </LinearLayout>
 
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:id="@+id/food_and_drink_container"
-            android:gravity="center">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/food_and_drink_container"
+                style="@style/CategoriesContainer">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/food_and_drink"
-                android:layout_gravity="center"/>
+                <ImageView
+                    android:layout_height="120dp"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/ic_restaurant"
+                    style="@style/iconImage"/>
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/food_and_drink"
+                    style="@style/CategoryTitle"/>
 
-    </LinearLayout>
+            </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
+        </TableRow>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:id="@+id/shopping_container">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/shopping"
-                android:layout_gravity="center"/>
+            <LinearLayout
+                android:id="@+id/shopping_container"
+                style="@style/CategoriesContainer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
 
-        </LinearLayout>
+                <ImageView
+                    style="@style/iconImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_sunglasses" />
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:id="@+id/places_to_stay_container">
+                <TextView
+                    style="@style/CategoryTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shopping" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/places_to_stay"
-                android:layout_gravity="center"/>
+            </LinearLayout>
 
-        </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/places_to_stay_container"
+                style="@style/CategoriesContainer">
 
-    </LinearLayout>
+                <ImageView
+                    android:layout_height="120dp"
+                    android:layout_width="match_parent"
+                    android:src="@drawable/ic_hotel_sign"
+                    style="@style/iconImage"/>
 
-</LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/places_to_stay"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    style="@style/CategoryTitle"/>
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+</ScrollView>
