@@ -1,5 +1,4 @@
 # New Jersey Tour Guide
----
 This android app shows a list of some of the best places to visit in the garden state.
 You'll find some of the most beautiful places to stay, the top malls & farmers market to shop in, 
 as well as sightseeing/tours, & other fun things to do, indoors and out.
