@@ -10,19 +10,19 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="8dp">
+        android:layout_margin="8dp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Visit some of the best sights and attractions in New Jersey!"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
-            android:paddingTop="8dp"
-            android:paddingRight="8dp"
+            android:fontFamily="sans-serif"
             android:paddingLeft="8dp"
-            android:textAlignment="center"/>
-
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:text="Visit some of the best sights and attractions in New Jersey!"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
 
 
         <TableRow
@@ -31,45 +31,47 @@
             android:paddingTop="24dp">
 
             <LinearLayout
+                android:id="@+id/things_to_do_container"
+                style="@style/CategoriesContainer"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:id="@+id/things_to_do_container"
                 android:layout_weight="1"
-                style="@style/CategoriesContainer">
+                android:background="?attr/selectableItemBackground">
 
                 <ImageView
-                    android:layout_height="120dp"
+                    style="@style/iconImage"
                     android:layout_width="match_parent"
-                    android:src="@drawable/ic_sailboat"
-                    style="@style/iconImage"/>
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_sailboat" />
 
                 <TextView
+                    style="@style/CategoryTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/things_to_do"
-                    style="@style/CategoryTitle" />
+                    android:text="@string/things_to_do" />
 
             </LinearLayout>
 
 
             <LinearLayout
+                android:id="@+id/food_and_drink_container"
+                style="@style/CategoriesContainer"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/food_and_drink_container"
-                style="@style/CategoriesContainer">
+                android:background="?attr/selectableItemBackground">
 
                 <ImageView
-                    android:layout_height="120dp"
+                    style="@style/iconImage"
                     android:layout_width="match_parent"
-                    android:src="@drawable/ic_restaurant"
-                    style="@style/iconImage"/>
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_restaurant" />
 
                 <TextView
+                    style="@style/CategoryTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/food_and_drink"
-                    style="@style/CategoryTitle"/>
+                    android:text="@string/food_and_drink" />
 
             </LinearLayout>
 
@@ -84,7 +86,8 @@
                 style="@style/CategoriesContainer"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:background="?attr/selectableItemBackground">
 
                 <ImageView
                     style="@style/iconImage"
@@ -101,25 +104,26 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/places_to_stay_container"
+                style="@style/CategoriesContainer"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:id="@+id/places_to_stay_container"
-                style="@style/CategoriesContainer">
+                android:background="?attr/selectableItemBackground">
 
                 <ImageView
-                    android:layout_height="120dp"
+                    style="@style/iconImage"
                     android:layout_width="match_parent"
-                    android:src="@drawable/ic_hotel_sign"
-                    style="@style/iconImage"/>
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_hotel_sign" />
 
                 <TextView
+                    style="@style/CategoryTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/places_to_stay"
                     android:paddingLeft="4dp"
                     android:paddingRight="4dp"
-                    style="@style/CategoryTitle"/>
+                    android:text="@string/places_to_stay" />
 
             </LinearLayout>
 

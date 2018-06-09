@@ -44,6 +44,7 @@
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Large</item>
         <item name="android:textColor">@color/primaryTextColor</item>
         <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <!-- Place name text style -->
@@ -51,18 +52,22 @@
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Large</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
-    <!-- Place short description and city text style -->
+    <!-- Place's short description and city text style -->
     <style name="ShortDescriptAndCity">
         <item name="android:layout_marginTop">2dp</item>
         <item name="android:textColor">@color/secondaryTextColor</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small</item>
     </style>
 
-    <!-- Place description text style -->
+    <!-- Place's long description text style for the info page-->
     <style name="Description">
         <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Small</item>
         <item name="android:textColor">@color/primaryTextColor</item>
+        <item name="android:fontFamily">sans-serif</item>
     </style>
 
     <!-- Style for a tab that displays category name -->
