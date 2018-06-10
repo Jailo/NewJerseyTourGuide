@@ -3,15 +3,12 @@
     <string name="info">Info</string>
 
     <!-- Main Activity Strings -->
-    <string name="visit_nj">Visit some of the best sights and attractions in New Jersey!</string>
 
     <!--Things to do category -->
     <string name="things_to_do">Things To Do</string>
     <string name="fun">Fun &amp; Leisure</string>
     <string name="sightseeing_tours">Sightseeing &amp; Tours</string>
-    <string name="tours">Tours</string>
     <string name="sports_outdoors">Sports &amp; Outdoors</string>
-    <string name="outdoors">Outdoors</string>
 
     <!-- Food & Drink category -->
     <string name="food_and_drink">Food &amp; Drink</string>
